@@ -51,8 +51,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
+
+        android:height="48dp"
         android:layout_marginStart="197.dp"
-        android:layout_marginTop="82dp"
+        android:layout_marginTop="78.dp"
         android:padding="6dp"
         android:text="Sign in"
         android:textColor="@color/white"
@@ -61,6 +63,82 @@
         app:layout_constraintHorizontal_bias="0.647"
         app:layout_constraintStart_toStartOf="@+id/subTitleTV"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/firstNameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="140.dp"
+        android:layout_marginTop="80.dp"
+        android:padding="5.dp"
+        android:hint="First Name"
+        app:helperText="Required*"
+       app:counterEnabled="true"
+        app:counterMaxLength="15"
+        app:helperTextTextColor="#EB0C0C"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.255"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTv"
+
+        app:endIconMode="clear_text"
+        >
+
+         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/firstNameEt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             android:inputType="text"
+            android:textColor="@color/white"
+             android:maxLength="15"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lastNameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170.dp"
+        android:layout_marginTop="80.dp"
+        android:padding="5.dp"
+        android:hint="Last Name"
+        app:helperText="Required*"
+        app:counterEnabled="true"
+        app:counterMaxLength="15"
+        app:helperTextTextColor="#EB0C0C"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.255"
+        app:layout_constraintStart_toStartOf="@id/firstNameLayout"
+        app:layout_constraintTop_toBottomOf="@+id/titleTv"
+        app:endIconMode="clear_text"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/lastNameEt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:maxLength="15"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
